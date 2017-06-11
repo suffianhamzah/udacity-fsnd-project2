@@ -59,7 +59,7 @@
 }
 
 /* Featured Work */
-.featured_work_title {
+.featured_work_text_color {
     color: #7d97ad;
 }
 
@@ -73,10 +73,14 @@
 .featured_work {
     flex: 1 1 33%;
     text-align: center;
-    margin: 20 auto;
+    margin: 0 auto;
     width: 300px;
     word-wrap: break-word;
     color: #2d3c49;
+}
+
+.feature_work h3 {
+    font-size: 1.5em;
 }
 
 /* footer */
@@ -98,7 +102,7 @@
         flex-flow: column wrap;
     }
 
-    .featured_work_title {
+    .featured_work_section_title {
         text-align: center;
     }
 
@@ -106,4 +110,15 @@
         width: 300px;
     }
 
+}
+
+/* styling for links
+ with reference from: https://stackoverflow.com/questions/4953154/problem-with-a-tags-in-html-css-styling
+*/
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #2d3c49;
 }
