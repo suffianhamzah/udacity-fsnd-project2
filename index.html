@@ -3,7 +3,7 @@
 <head lang="en">
     <!-- meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Suffian Hamzah - Front-End Ninja</title>
 
@@ -26,9 +26,25 @@
     </header>
     <main>
         <section class="hero container">
-            <img class="hero-image" src="img/toa-heftiba-274947.jpg" height="1000" alt="coffee">
+            <picture >
+                <source
+                media="(min-width: 1800px)"
+                srcset="img/toa-heftiba-274947.jpg">
+
+                <source
+                media="(min-width: 1100px)"
+                srcset="img/toa-heftiba-274947-1800.jpg">
+
+                <source
+                media="(min-width: 600px)"
+                srcset="img/toa-heftiba-274947-mid.jpg">
+
+                <img class="hero-image" src="img/toa-heftiba-274947-small.jpg" alt="coffee">
+            </picture>
+            <!---
+            <img class="hero-image" src="img/toa-heftiba-274947-mid.jpg" sizes="50vw" srcset="img/toa-heftiba-274947-small.jpg 0.4x, img/toa-heftiba-274947-mid.jpg 0.8x, img/toa-heftiba-274947.jpg 1.6x" alt="coffee"> -->
         </section>
-        <section>
+        <section class="content">
             <h2 class="featured_work_text_color">Featured work</h2>
             <div class="container featured_work_wrapper">
                 <div class="featured_work">

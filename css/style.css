@@ -3,7 +3,7 @@
 
  * {
     box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
  }
 
  .container {
@@ -56,6 +56,7 @@
     flex-shrink:0;
     min-width:100%;
     min-height:100%
+    max-width: 100%;
 }
 
 /* Featured Work */
